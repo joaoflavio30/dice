@@ -20,10 +20,14 @@ class MainActivity : AppCompatActivity() {
             // instance a class of dice and roll the dice
             val dice = Dice(6)
             val diceRoll = dice.rollDice()
+            val secondDice = Dice(4)
+            val secondDiceRoll = secondDice.rollDice()
 
             //update the screen of a number sorted
             val resultTextView: TextView = findViewById(R.id.hello)
             resultTextView.text = diceRoll.toString()
+            val secondTextView : TextView = findViewById(R.id.secondTextView)
+            secondTextView.text = secondDiceRoll.toString()
         }
     }
 
